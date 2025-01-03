@@ -24,14 +24,17 @@ manifest:
   remotes:
     - name: urob
       url-base: https://github.com/urob
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    # - name: zmkfirmware
+    #   url-base: https://github.com/zmkfirmware
+    - name: cmrivera8
+      url-base: https://github.com/cmrivera8
 
   projects:
     # This is vanilla ZMK - just using my remote to pin the current state of main,
     # as upstream hasn't yet released a version with mouse.
     - name: zmk
-      revision: v0.1+mouse
+      remote: cmrivera8
+      revision: v0.1.1
       import: app/west.yml
 
     # ZMK modules

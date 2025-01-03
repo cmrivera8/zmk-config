@@ -57,6 +57,10 @@ _build_single $board $shield $snippet *west_args:
         mkdir -p "{{ out }}" && cp "$build_dir/zephyr/zmk.bin" "{{ out }}/$artifact.bin"
     fi
 
+    # Copy files
+    cp -r /home/cmrivera/urom/zmk-config/firmware/* /mnt/g/Utilisateurs/carlos.rivera/Downloads/
+    #
+
 # build firmware for matching targets
 build expr *west_args: _parse_combos
     #!/usr/bin/env bash
