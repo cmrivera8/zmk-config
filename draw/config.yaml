@@ -2,7 +2,62 @@ parse_config:
   zmk_preamble: "#include <zmk-helpers/key-labels/42.h>"
   zmk_additional_includes:
     - "modules/zmk/helpers/include"
+  raw_binding_map: {
+    "&MM_SCLN": ": ;",
+    "&MM_ES_QUOT": "' \"",
+    "&TD_ES_C": "C Ç",
+    "&MM_ES_SLSH": "/ ?¿",
+
+    "&kp ES_TILD": "~",
+    "&TD_ES_EXLM": "! ¡",
+    "&kp ES_AT": "@",
+    "&kp ES_LPRN": "(",
+    "&kp ES_RPRN": ")",
+    "&kp ES_PERC": "%",
+    "&kp ES_CIRC": "^",
+    "&kp ES_AMPR": "&",
+    "&kp ES_HASH": "#",
+    "&kp ES_DLR": "$",
+    "&kp ES_LBRC": "[",
+    "&kp ES_RBRC": "]",
+    "&kp ES_ASTR": "*",
+    "&kp ES_ACUT": "´",
+    "&kp ES_MINS": "-",
+    "&kp ES_PLUS": "+",
+    "&kp ES_EQL": "=",
+    "&kp ES_EURO": "€",
+    "&kp ES_LCBR": "{",
+    "&kp ES_RCBR": "}",
+    "&kp ES_DIAE": "¨",
+    "&kp ES_GRV": "`",
+    "&MM_ES_BSLS": "\\ |",
+
+    "&kp UP": $$material:keyboard_arrow_up$$,
+    "&kp LEFT": $$material:keyboard_arrow_left$$,
+    "&kp DOWN": $$material:keyboard_arrow_down$$,
+    "&kp RIGHT": $$material:keyboard_arrow_right$$,
+
+    "&mkp LCLK": "LCLK",
+    "&mmv MOVE_UP": "MOVE_UP",
+    "&mkp RCLK": "RCLK",
+    "&msc SCRL_UP": "SCRL_UP",
+    "&mmv MOVE_LEFT": "MOVE_LEFT",
+    "&mmv MOVE_DOWN": "MOVE_DOWN",
+    "&mmv MOVE_RIGHT": "MOVE_RIGHT",
+    "&msc SCRL_DOWN": "SCRL_DOWN",
+
+    "&bootloader": "boot",
+    "&kp C_VOL_UP": $$material:volume_up$$,
+    "&kp C_PREV": $$material:skip_previous$$,
+    "&kp C_PP": $$material:resume$$,
+    "&kp C_NEXT": $$material:skip_next$$,
+    "&kp C_VOL_DN": $$material:volume_down$$,
+    "&kp C_MUTE": $$material:volume_off$$,
+    }
+
+  trans_legend: {"t": " ", "type": "trans"}
 
 draw_config:
-  footer_text: "urob/zmk-config"
+  footer_text: "https://github.com/cmrivera8/zmk-config"
   dark_mode: auto
+  glyph_tap_size: 20

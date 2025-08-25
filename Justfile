@@ -57,10 +57,6 @@ _build_single $board $shield $snippet *west_args:
         mkdir -p "{{ out }}" && cp "$build_dir/zephyr/zmk.bin" "{{ out }}/$artifact.bin"
     fi
 
-    # Copy files
-    cp -r /home/cmrivera/urom/zmk-config/firmware/* /mnt/g/Utilisateurs/carlos.rivera/Downloads/
-    #
-
 # build firmware for matching targets
 build expr *west_args: _parse_combos
     #!/usr/bin/env bash
@@ -88,8 +84,17 @@ clean-nix:
 draw:
     #!/usr/bin/env bash
     set -euo pipefail
-    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/base.keymap" >"{{ draw }}/base.yaml"
-    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -k "ferris/sweep" >"{{ draw }}/base.svg"
+
+    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/corne_xiao_v2.keymap" >"{{ draw }}/base.yaml"
+
+    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -j "{{ draw }}/corne_xiao.json" >"{{ draw }}/base.svg"
+
+    # svg to png
+    if command -v inkscape >/dev/null 2>&1; then
+        inkscape "{{ draw }}/base.svg" --export-filename="{{ draw }}/base.png" --export-dpi=300 > /dev/null 2>&1
+    else
+        echo "Warning: inkscape not found, skipping PNG export."
+    fi
 
 # initialize west
 init:
