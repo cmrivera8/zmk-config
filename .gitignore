@@ -10,3 +10,5 @@ zmk
 draw/base.svg
 draw/base.png
 draw/base.yaml
+# Ignore sensitive content
+secrets.keymap

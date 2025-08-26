@@ -45,6 +45,8 @@ parse_config:
     "&mmv MOVE_DOWN": "MOVE_DOWN",
     "&mmv MOVE_RIGHT": "MOVE_RIGHT",
     "&msc SCRL_DOWN": "SCRL_DOWN",
+    "&email_m": $$material:email$$,
+    "&name_m": $$material:badge$$,
 
     "&bootloader": "boot",
     "&kp C_VOL_UP": $$material:volume_up$$,
@@ -60,4 +62,5 @@ parse_config:
 draw_config:
   footer_text: "https://github.com/cmrivera8/zmk-config"
   dark_mode: auto
-  glyph_tap_size: 20
+  glyph_tap_size: 22
+  n_columns: 2
