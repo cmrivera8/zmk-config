@@ -5,17 +5,23 @@ parse_config:
   raw_binding_map: {
     "&MM_SCLN": ": ;",
     "&MM_ES_QUOT": "' \"",
-    "&TD_ES_C": "C Ç",
-    "&MM_ES_SLSH": "/ ?¿",
+    "&TD_ES_C": "(Ç) C",
+    "&kp ES_COMM": ",",
+    "&kp ES_SCLN": ";",
+        "&kp ES_DOT": ".",
+    "&kp ES_COLN": ":",
+    "&MM_ES_SLSH": "?(¿) /",
 
     "&kp ES_TILD": "~",
-    "&TD_ES_EXLM": "! ¡",
+    "&TD_ES_EXLM": "! (¡)",
     "&kp ES_AT": "@",
     "&kp ES_LPRN": "(",
     "&kp ES_RPRN": ")",
     "&kp ES_PERC": "%",
     "&kp ES_CIRC": "^",
     "&kp ES_AMPR": "&",
+    "&kp ES_LABK": "<",
+    "&kp ES_RABK": ">",
     "&kp ES_HASH": "#",
     "&kp ES_DLR": "$",
     "&kp ES_LBRC": "[",
@@ -30,7 +36,8 @@ parse_config:
     "&kp ES_RCBR": "}",
     "&kp ES_DIAE": "¨",
     "&kp ES_GRV": "`",
-    "&MM_ES_BSLS": "\\ |",
+    "&kp ES_BSLS": "\\",
+    "&kp ES_PIPE": "|",
 
     "&kp UP": $$material:keyboard_arrow_up$$,
     "&kp LEFT": $$material:keyboard_arrow_left$$,
@@ -64,3 +71,4 @@ draw_config:
   dark_mode: auto
   glyph_tap_size: 22
   n_columns: 2
+  dark_mode: false
