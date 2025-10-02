@@ -152,17 +152,17 @@ ZMK_LAYER(base,
 //├──────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
      &none     &kp ES_Z      &kp ES_X      &TD_ES_C       &kp ES_V      &kp ES_B &none &none &kp ES_K      &kp ES_M     &MM_ES_COMM    &MM_ES_DOT    &MM_ES_SLSH   &none
 //╰──────────┴─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────╯
-                                                    &lt MEDIA ESC &lt LOWER SPACE &kp TAB    &kp RET  &lt RAISE BSPC &lt MOUSE DEL
+                                                    &lt MEDIA ESC &lt LOWER SPACE &kp TAB    &lt MOUSE RET  &lt RAISE BSPC &mt K_APP DEL
 //                                                     ╰─────────┴───────┴─────────╯      ╰───────────┴─────┴─────────╯
 )
 
 ZMK_LAYER(lower,
 //╭──────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────╮
-     &kp ES_TILD &TD_ES_EXLM  &kp ES_AT    &kp ES_LPRN    &kp ES_RPRN   &kp ES_PERC          &kp ES_CIRC   &kp ES_N7     &kp ES_N8     &kp ES_N9     &kp ES_MINS  &none
+     &kp ES_TILD &TD_ES_EXLM  &kp ES_AT    &kp ES_LPRN    &kp ES_RPRN   &kp ES_PERC          &kp ES_CIRC   &kp ES_N7     &kp ES_N8     &kp ES_N9     &kp ES_MINS   &none
 //├──────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
-     &none      &kp ES_HASH   &MM_ES_CURR  &hml LSHFT ES_LBRC &hml LCTRL ES_RBRC &kp ES_ASTR &MM_ES_ACC    &kp ES_N4 &hmr LSHFT ES_N5 &kp ES_N6      &MM_ES_EQL_P &none
+     &none      &kp ES_HASH   &MM_ES_CURR  &hml LSHFT ES_LBRC &hml LCTRL ES_RBRC &kp ES_ASTR &MM_ES_ACC    &kp ES_N4 &hmr LSHFT ES_N5 &kp ES_N6      &MM_ES_EQL_P  &none
 //├──────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
-    &none       &kp ES_AMPR   &MM_ES_ABK   &kp ES_LCBR    &kp ES_RCBR   &kp ES_DIAE &none &none &kp ES_N0  &kp ES_N1     &kp ES_N2     &kp ES_N3     &MM_ES_BSLS  &none
+     &none      &kp ES_AMPR   &MM_ES_ABK   &kp ES_LCBR    &kp ES_RCBR   &kp ES_DIAE &none &none &kp ES_N0  &kp ES_N1     &kp ES_N2     &kp ES_N3     &MM_ES_BSLS   &none
 //╰──────────┴─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────╯
                                                         &lt MEDIA ESC &none &kp TAB           &kp RET  &kp BSPC  &kp DEL
 //                                                     ╰─────────┴───────┴─────────╯      ╰───────────┴─────┴─────────╯
@@ -177,7 +177,7 @@ ZMK_LAYER(raise,
 //├──────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
        &none    &kp F9        &kp F10      &kp F11       &kp F12         &kp CAPS  &none &none &none        &none          &none        &none         &none        &none
 //╰──────────┴─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────╯
-                                                        &lt MEDIA ESC&none &kp TAB            &kp RET   &none    &none
+                                                        &lt MEDIA ESC &none &kp TAB            &kp RET   &none    &none
 //                                                     ╰─────────┴───────┴─────────╯      ╰───────────┴─────┴─────────╯
 )
 
@@ -190,7 +190,7 @@ ZMK_LAYER(mouse,
 //├──────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
        &none      &none         &none         &none         &none         &none    &none &none &none         &none         &none         &none        &none        &none
 //╰──────────┴─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────╯
-                                                        &lt MEDIA ESC&none &kp TAB            &kp RET  &lt RAISE BSPC &none
+                                                       &lt MEDIA ESC &none &kp TAB             &kp RET  &lt RAISE BSPC &none
 //                                                     ╰─────────┴───────┴─────────╯      ╰───────────┴─────┴─────────╯
 )
 
@@ -201,9 +201,9 @@ ZMK_LAYER(media,
 //├──────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
        &none      &none         &none         &none         &none         &none                &none      &kp C_PREV     &kp C_PP    &kp C_NEXT    &kp C_VOL_DN    &none
 //├──────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
-       &none      &none         &none         &none         &none         &none    &none &none  &none         &none        &none          &none     &kp C_MUTE     &none
+       &none      &none         &none         &none         &none         &none    &none &none &none         &none        &none          &none     &kp C_MUTE      &none
 //╰──────────┴─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤      ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────╯
-                                                        &lt MEDIA ESC&none &kp TAB            &kp RET  &lt RAISE BSPC &none
+                                                       &lt MEDIA ESC &none &kp TAB             &kp RET  &lt RAISE BSPC &none
 //                                                     ╰─────────┴───────┴─────────╯      ╰───────────┴─────┴─────────╯
 )
 
